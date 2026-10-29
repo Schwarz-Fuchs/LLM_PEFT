@@ -1,0 +1,13 @@
+
+Baseline: model=OpenLLaMA-3B dataset=AQuA
+Base model: E:\Python_projects\LLM_PEFT\models\open_llama_3b_v2
+Progress: 0/254
+  1/254 accuracy=0.0000%
+  2/254 accuracy=0.0000%
+  3/254 accuracy=0.0000%
+  4/254 accuracy=0.0000%
+  5/254 accuracy=0.0000%
+  6/254 accuracy=0.0000%
+  7/254 accuracy=0.0000%
+  8/254 accuracy=0.0000%
+  9/254 accuracy=0.0000%

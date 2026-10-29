@@ -1,0 +1,38 @@
+[
+    {
+        "instruction": "Tim decides to do a movie marathon.  The first movie is 2 hours long.  The next movie is 50% longer.  And the last movie is 1 hour shorter than the combined time of the previous 2 movies.  How long was his movie marathon?\n ",
+        "input": "",
+        "output": "Step 1: Find the length of the second movie. \n50% of 2 hours is 1 hour, so the second movie is 2 + 1 = 3 hours long. \n\nStep 2: Find the combined length of the first two movies. \nThe first movie is 2 hours and the second movie is 3 hours, so the combined length is 2 + 3 = 5 hours. \n\nStep 3: Find the length of the third movie. \nThe third movie is 1 hour shorter than the combined length of the first two movies, which is 5 hours. So, the third movie is 5 - 1 = 4 hours long. \n\nStep 4: Find the total length of the movie marathon. \nTo find the total length, we add up the length of all three movies: 2 + 3 + 4 = 9 hours. \n\nTherefore, the movie marathon is 9 hours long. The answer in Arabic numerals is 9.",
+        "answer": "9.0"
+    },
+    {
+        "instruction": "Mrs. Thomson received an incentive worth $240. She spent 1/3 of the money on food and 1/5 of it on clothes. Then, she put in her savings account 3/4 of the remaining money. How much money did Mrs. Thomson save?\n ",
+        "input": "",
+        "output": "Step 1: Find the amount of money Mrs. Thomson spent on food.\n1/3 x $240 = $<<1/3*240=80>>80\n\nStep 2: Find the amount of money Mrs. Thomson spent on clothes.\n1/5 x $240 = $<<1/5*240=48>>48\n\nStep 3: Find the total amount of money Mrs. Thomson spent.\n$80 + $48 = $<<80+48=128>>128\n\nStep 4: Find the amount of money Mrs. Thomson had left.\n$240 - $128 = $<<240-128=112>>112\n\nStep 5: Find the amount of money Mrs. Thomson saved.\n3/4 x $112 = $<<3/4*112=84>>84\n\nTherefore, Mrs. Thomson saved $84. Answer: \\boxed{84}.",
+        "answer": "84.0"
+    },
+    {
+        "instruction": "Erica lives near a lake where most locals sell fish as their main source of income, earning $20 per kg of fish. She goes out fishing today and catches twice as many fish as she caught in total in the past four months. If Erica trawled 80 kg of fish in the past four months, not including today, how much money will she have earned in the past four months including today (assuming she sells all her fish)?\n ",
+        "input": "",
+        "output": "1. Erica caught twice as many fish as she caught in the past four months, which means she caught 2 x 80 kg = <<2*80=160>>160 kg of fish today.\n2. Therefore, her total catch for the past four months including today is 80 kg + 160 kg = <<80+160=240>>240 kg of fish.\n3. Erica earns $20 per kg of fish, so she will earn 240 kg x $20/kg = $<<240*20=4800>>4800 in the past four months including today. \n\nTherefore, Erica will have earned $4800 in the past four months including today.",
+        "answer": "4800.0"
+    },
+    {
+        "instruction": "Oliver is trying to decide between two different sized boxes of macaroni and cheese. He wants to know which is the better value, so instead of just looking at the overall price, he looks at the price per ounce. The larger box is 30 ounces and the smaller box is 20 ounces. The larger box costs $4.80. The smaller box costs $3.40. What is the price per ounce in cents of the box with the better value (lowest price per ounce)?\n ",
+        "input": "",
+        "output": "To find the price per ounce of each box, we need to divide the cost by the number of ounces:\n\nFor the larger box:\nPrice per ounce = $4.80 \u00f7 30 ounces = $0.16 per ounce\n\nFor the smaller box:\nPrice per ounce = $3.40 \u00f7 20 ounces = $0.17 per ounce\n\nTherefore, the larger box is the better value, with a price per ounce of $0.16 or 16 cents per ounce.\n\nThe answer is: 16.",
+        "answer": "16.0"
+    },
+    {
+        "instruction": "Hans booked a room in a hotel. The hotel has 10 floors with 10 identical rooms on each floor. Because of an accident, the last floor is unavailable for the guests. Considering there are no other guests, in how many different rooms could Hans be checked in?\n ",
+        "input": "",
+        "output": "Since the last floor is unavailable, there are only 9 floors with rooms available. Each floor has 10 identical rooms. Therefore, there are a total of 9 x 10 = 90 rooms available for Hans to be checked in. \n\nThe answer is: 90.",
+        "answer": "90.0"
+    },
+    {
+        "instruction": "A pet store has six dogs for sale. They have half as many cats, twice as many birds, and thrice as many fish for sale. How many animals are for sale in the pet store?\n ",
+        "input": "",
+        "output": "Step 1: Find the number of cats for sale. \nThe number of cats is half the number of dogs, so 6 \u00f7 2 = 3 cats.\n\nStep 2: Find the number of birds for sale. \nThe number of birds is twice the number of dogs, so 6 x 2 = 12 birds.\n\nStep 3: Find the number of fish for sale. \nThe number of fish is thrice the number of dogs, so 6 x 3 = 18 fish.\n\nStep 4: Add up all the animals for sale. \n6 dogs + 3 cats + 12 birds + 18 fish = 39 animals.\n\nTherefore, there are 39 animals for sale in the pet store.",
+        "answer": "39.0"
+    }
+]

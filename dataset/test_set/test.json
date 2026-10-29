@@ -1,0 +1,26 @@
+[
+    {
+        "instruction": "There are 7 crayons in the drawer . Mary took 3 crayons out of the drawer . How many crayons are there now ? ",
+        "input": "",
+        "output": "\nA: There were 7 crayons in the drawer. Mary took 3 out, so now there are 7 - 3 = 4 crayons. The answer is 4.",
+        "answer": "4"
+    },
+    {
+        "instruction": "A bucket contains 3 gallons of water . If Derek adds 6.8 gallons more , how many gallons will there be in all ? ",
+        "input": "",
+        "output": "\nA: The bucket initially contains 3 gallons of water. Derek adds 6.8 gallons more. So in total there will be 3 + 6.8 = 9.8 gallons. The answer is 9.8.",
+        "answer": "9.8"
+    },
+    {
+        "instruction": "Sara 's high school played 12 basketball games this year . The team won most of their games . They were defeated during 4 games . How many games did they win ? ",
+        "input": "",
+        "output": "\nA: The team played 12 games in total. They were defeated in 4 games. That means they won 12 - 4 = 8 games. The answer is 8.",
+        "answer": "8"
+    },
+    {
+        "instruction": "Mike had 34 peaches at his roadside fruit dish . He went to the orchard and picked peaches to stock up . There are now 86 peaches . how many did he pick ? ",
+        "input": "",
+        "output": "\nA: Mike had 34 peaches at the roadside fruit dish. He went to the orchard and picked peaches to stock up. Now there are 86 peaches. The difference must be the number of peaches he picked. So, he must have picked 86 - 34 = 52 peaches. The answer is 52.",
+        "answer": "52"
+    }
+]

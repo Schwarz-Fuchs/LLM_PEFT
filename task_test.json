@@ -1,0 +1,302 @@
+{
+  "run_name": "peft_custom_smoke",
+  "continue_on_error": true,
+  "tasks": [
+    {
+      "task_id": "openllama3b_lora_one_epoch_custom6",
+      "train": {
+        "base_model": "./models/open_llama_3b_v2",
+        "data_path": "./ft-training_set/test_training_data.json",
+        "output_dir": "./trained_models/custom_smoke/openllama3b/lora/one_epoch",
+        "adapter_name": "lora",
+        "batch_size": 4,
+        "micro_batch_size": 4,
+        "num_epochs": 1,
+        "learning_rate": 0.0003,
+        "cutoff_len": 256,
+        "val_set_size": 0.2,
+        "early_stopping": false,
+        "eval_step": 1,
+        "save_step": 1
+      },
+      "evaluations": [
+        {
+          "eval_id": "test_set",
+          "model": "OpenLLaMA-3B",
+          "adapter": "LoRA",
+          "dataset": "Test_set",
+          "base_model": "./models/open_llama_3b_v2",
+          "generation": {
+            "num_beams": 1,
+            "do_sample": false,
+            "temperature": 0.1,
+            "top_p": 0.75,
+            "top_k": 40,
+            "max_new_tokens": 256,
+            "use_cache": true
+          }
+        }
+      ]
+    },
+    {
+      "task_id": "openllama3b_lora_early_stop_custom6",
+      "train": {
+        "base_model": "./models/open_llama_3b_v2",
+        "data_path": "./ft-training_set/test_training_data.json",
+        "output_dir": "./trained_models/custom_smoke/openllama3b/lora/early_stop",
+        "adapter_name": "lora",
+        "batch_size": 4,
+        "micro_batch_size": 4,
+        "num_epochs": 10,
+        "learning_rate": 0.0003,
+        "cutoff_len": 256,
+        "val_set_size": 0.2,
+        "early_stopping": true,
+        "early_stopping_patience": 2,
+        "early_stopping_threshold": 0.001,
+        "early_stopping_eval_samples": 16
+      },
+      "evaluations": [
+        {
+          "eval_id": "test_set",
+          "model": "OpenLLaMA-3B",
+          "adapter": "LoRA",
+          "dataset": "Test_set",
+          "base_model": "./models/open_llama_3b_v2",
+          "generation": {
+            "num_beams": 1,
+            "do_sample": false,
+            "temperature": 0.1,
+            "top_p": 0.75,
+            "top_k": 40,
+            "max_new_tokens": 256,
+            "use_cache": true
+          }
+        }
+      ]
+    },
+    {
+      "task_id": "openllama3b_adapterp_one_epoch_custom6",
+      "train": {
+        "base_model": "./models/open_llama_3b_v2",
+        "data_path": "./ft-training_set/test_training_data.json",
+        "output_dir": "./trained_models/custom_smoke/openllama3b/adapterp/one_epoch",
+        "adapter_name": "bottleneck",
+        "batch_size": 4,
+        "micro_batch_size": 4,
+        "num_epochs": 1,
+        "learning_rate": 0.0003,
+        "cutoff_len": 256,
+        "val_set_size": 0.2,
+        "early_stopping": false,
+        "use_adapterp": true,
+        "eval_step": 1,
+        "save_step": 1
+      },
+      "evaluations": [
+        {
+          "eval_id": "test_set",
+          "model": "OpenLLaMA-3B",
+          "adapter": "AdapterP",
+          "dataset": "Test_set",
+          "base_model": "./models/open_llama_3b_v2",
+          "generation": {
+            "num_beams": 1,
+            "do_sample": false,
+            "temperature": 0.1,
+            "top_p": 0.75,
+            "top_k": 40,
+            "max_new_tokens": 256,
+            "use_cache": true
+          }
+        }
+      ]
+    },
+    {
+      "task_id": "openllama3b_adapterp_early_stop_custom6",
+      "train": {
+        "base_model": "./models/open_llama_3b_v2",
+        "data_path": "./ft-training_set/test_training_data.json",
+        "output_dir": "./trained_models/custom_smoke/openllama3b/adapterp/early_stop",
+        "adapter_name": "bottleneck",
+        "batch_size": 4,
+        "micro_batch_size": 4,
+        "num_epochs": 10,
+        "learning_rate": 0.0003,
+        "cutoff_len": 256,
+        "val_set_size": 0.2,
+        "early_stopping": true,
+        "use_adapterp": true,
+        "early_stopping_patience": 2,
+        "early_stopping_threshold": 0.001,
+        "early_stopping_eval_samples": 16
+      },
+      "evaluations": [
+        {
+          "eval_id": "test_set",
+          "model": "OpenLLaMA-3B",
+          "adapter": "AdapterP",
+          "dataset": "Test_set",
+          "base_model": "./models/open_llama_3b_v2",
+          "generation": {
+            "num_beams": 1,
+            "do_sample": false,
+            "temperature": 0.1,
+            "top_p": 0.75,
+            "top_k": 40,
+            "max_new_tokens": 256,
+            "use_cache": true
+          }
+        }
+      ]
+    },
+    {
+      "task_id": "tinyllama11b_lora_one_epoch_custom6",
+      "train": {
+        "base_model": "./models/TinyLlama_v1.1",
+        "data_path": "./ft-training_set/test_training_data.json",
+        "output_dir": "./trained_models/custom_smoke/tinyllama11b/lora/one_epoch",
+        "adapter_name": "lora",
+        "batch_size": 4,
+        "micro_batch_size": 4,
+        "num_epochs": 1,
+        "learning_rate": 0.0003,
+        "cutoff_len": 256,
+        "val_set_size": 0.2,
+        "early_stopping": false,
+        "eval_step": 1,
+        "save_step": 1
+      },
+      "evaluations": [
+        {
+          "eval_id": "test_set",
+          "model": "TinyLlama-1.1B",
+          "adapter": "LoRA",
+          "dataset": "Test_set",
+          "base_model": "./models/TinyLlama_v1.1",
+          "generation": {
+            "num_beams": 1,
+            "do_sample": false,
+            "temperature": 0.1,
+            "top_p": 0.75,
+            "top_k": 40,
+            "max_new_tokens": 256,
+            "use_cache": true
+          }
+        }
+      ]
+    },
+    {
+      "task_id": "tinyllama11b_lora_early_stop_custom6",
+      "train": {
+        "base_model": "./models/TinyLlama_v1.1",
+        "data_path": "./ft-training_set/test_training_data.json",
+        "output_dir": "./trained_models/custom_smoke/tinyllama11b/lora/early_stop",
+        "adapter_name": "lora",
+        "batch_size": 4,
+        "micro_batch_size": 4,
+        "num_epochs": 10,
+        "learning_rate": 0.0003,
+        "cutoff_len": 256,
+        "val_set_size": 0.2,
+        "early_stopping": true,
+        "early_stopping_patience": 2,
+        "early_stopping_threshold": 0.001,
+        "early_stopping_eval_samples": 16
+      },
+      "evaluations": [
+        {
+          "eval_id": "test_set",
+          "model": "TinyLlama-1.1B",
+          "adapter": "LoRA",
+          "dataset": "Test_set",
+          "base_model": "./models/TinyLlama_v1.1",
+          "generation": {
+            "num_beams": 1,
+            "do_sample": false,
+            "temperature": 0.1,
+            "top_p": 0.75,
+            "top_k": 40,
+            "max_new_tokens": 256,
+            "use_cache": true
+          }
+        }
+      ]
+    },
+    {
+      "task_id": "tinyllama11b_adapterp_one_epoch_custom6",
+      "train": {
+        "base_model": "./models/TinyLlama_v1.1",
+        "data_path": "./ft-training_set/test_training_data.json",
+        "output_dir": "./trained_models/custom_smoke/tinyllama11b/adapterp/one_epoch",
+        "adapter_name": "bottleneck",
+        "batch_size": 4,
+        "micro_batch_size": 4,
+        "num_epochs": 1,
+        "learning_rate": 0.0003,
+        "cutoff_len": 256,
+        "val_set_size": 0.2,
+        "early_stopping": false,
+        "use_adapterp": true,
+        "eval_step": 1,
+        "save_step": 1
+      },
+      "evaluations": [
+        {
+          "eval_id": "test_set",
+          "model": "TinyLlama-1.1B",
+          "adapter": "AdapterP",
+          "dataset": "Test_set",
+          "base_model": "./models/TinyLlama_v1.1",
+          "generation": {
+            "num_beams": 1,
+            "do_sample": false,
+            "temperature": 0.1,
+            "top_p": 0.75,
+            "top_k": 40,
+            "max_new_tokens": 256,
+            "use_cache": true
+          }
+        }
+      ]
+    },
+    {
+      "task_id": "tinyllama11b_adapterp_early_stop_custom6",
+      "train": {
+        "base_model": "./models/TinyLlama_v1.1",
+        "data_path": "./ft-training_set/test_training_data.json",
+        "output_dir": "./trained_models/custom_smoke/tinyllama11b/adapterp/early_stop",
+        "adapter_name": "bottleneck",
+        "batch_size": 4,
+        "micro_batch_size": 4,
+        "num_epochs": 10,
+        "learning_rate": 0.0003,
+        "cutoff_len": 256,
+        "val_set_size": 0.2,
+        "early_stopping": true,
+        "use_adapterp": true,
+        "early_stopping_patience": 2,
+        "early_stopping_threshold": 0.001,
+        "early_stopping_eval_samples": 16
+      },
+      "evaluations": [
+        {
+          "eval_id": "test_set",
+          "model": "TinyLlama-1.1B",
+          "adapter": "AdapterP",
+          "dataset": "Test_set",
+          "base_model": "./models/TinyLlama_v1.1",
+          "generation": {
+            "num_beams": 1,
+            "do_sample": false,
+            "temperature": 0.1,
+            "top_p": 0.75,
+            "top_k": 40,
+            "max_new_tokens": 256,
+            "use_cache": true
+          }
+        }
+      ]
+    }
+  ]
+}
